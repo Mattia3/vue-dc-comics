@@ -13,20 +13,20 @@ export default {
 </script>
 
 <style lang="scss">
-  
+@import "../css/variables";
   .main-container{
-    background-color: black;
+    background-color: #1c1c1c;
 
     .container-link{
       width: 1330px;
       margin: 0 auto;
       text-align: initial;
-      padding: 50px 0px;
+      padding: $padding-y 0px;
     }
 
       .container-link h2 a{
         text-decoration: none;
-        color: white;
+        color: $color_white;
       }
 
   }

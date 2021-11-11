@@ -7,43 +7,50 @@
           <ul>
             <li><h2 class="title-footer">DC Comics</h2></li>
             <li><a href="#">Movie</a></li>
-            <li><a href="#">Movie</a></li>
-            <li><a href="#">Movie</a></li>
-            <li><a href="#">Movie</a></li>
-            <li><a href="#">Movie</a></li>
-            <li><a href="#">Movie</a></li>
+            <li><a href="#">Characters</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">TV</a></li>
+            <li><a href="#">Games</a></li>
+            <li><a href="#">Videos</a></li>
+            <li><a href="#">News</a></li>
           </ul>
 
           <ul>
             <li><h2 class="title-footer">Shop</h2></li>
-            <li><a href="#">Shop Dc</a></li>
-            <li><a href="#">Shop Dc</a></li>
+            <li><a href="#">Shop DC</a></li>
+            <li><a href="#">Shop DC Collectibles</a></li>
           </ul>
         </div>
 
         <div class="list-column2">
           <ul>
             <li><h2 class="title-footer">DC</h2></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
+             <li><a href="#">Term Of Use</a></li>
+            <li><a href="#">Privacy police(New)</a></li>
+            <li><a href="#">Ad Choises</a></li>
+            <li><a href="#">Adversiting</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Subscriptions</a></li>
+            <li><a href="#">Talent Workshops</a></li>
+            <li><a href="#">CPSC Certificates</a></li>
+            <li><a href="#">Ratings</a></li>
+            <li><a href="#">Shop Help</a></li>
+            <li><a href="#">Contact Us</a></li>
           </ul>
         </div>
 
-        <div class="list-column2">
+        <div>
           <ul>
-            <li><h2 class="title-footer">DC</h2></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
-            <li><a href="#">Hello</a></li>
+            <li><h2 class="title-footer">SITES</h2></li>
+            <li><a href="#">DC</a></li>
+            <li><a href="#">MAD Magazine</a></li>
+            <li><a href="#">DC Kids</a></li>
+            <li><a href="#">DC Universe</a></li>
+            <li><a href="#">DC Power Visa</a></li>
           </ul>
         </div>
+
+        <img class="logo-dc" src="../assets/img/dc-logo-bg.png" alt="">
       </div>
     </div>
 
@@ -53,12 +60,12 @@
           <button class="button-footer">SIGN_UP NOW!</button>
         </div>
         <div class="social-icon">
-          <h2>Follow Us</h2>
+          <h2 class="title-footer-icon">FOLLOW US</h2>
           <img src="../assets/img/footer-facebook.png" alt="Icona Facebook">
-          <img src="../assets/img/footer-facebook.png" alt="Icona Facebook">
-          <img src="../assets/img/footer-facebook.png" alt="Icona Facebook">
-          <img src="../assets/img/footer-facebook.png" alt="Icona Facebook">
-          <img src="../assets/img/footer-facebook.png" alt="Icona Facebook">
+          <img src="../assets/img/footer-periscope.png" alt="Icona Facebook">
+          <img src="../assets/img/footer-pinterest.png" alt="Icona Facebook">
+          <img src="../assets/img/footer-twitter.png" alt="Icona Facebook">
+          <img src="../assets/img/footer-youtube.png" alt="Icona Facebook">
         </div>
       </div>
     </div>
@@ -72,6 +79,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "../css/variables";
   .background-image{
     background-image: url("../assets/img/footer-bg.jpg");
     background-size: cover;
@@ -85,6 +93,7 @@ export default {
       margin: 0 auto;
       display: flex;
       padding: 25px 0px; 
+      position: relative;
     }
 
       .list-item{
@@ -98,7 +107,7 @@ export default {
         }
 
           .title-footer{
-            color: white;
+            color: $color_white;
             padding-bottom: 15px;
             text-align: initial;
           }
@@ -114,10 +123,20 @@ export default {
       .list-column2{
         padding: 0px 60px;
       }
+
+      .logo-dc{
+        transform: scale(1.5);
+        position: absolute;
+        right: 0;
+        top: 0px;
+        height: 100%;
+      }
   }
 
   .background-enter{
-     background-color: black;
+     background-color: #303030;
+     z-index: 10;
+     position: relative;
 
     .container-enter{
       display: flex;
@@ -130,6 +149,7 @@ export default {
 
       .social-icon{
         display: flex;
+        align-items: center;
       }
 
         .social-icon img{
@@ -137,16 +157,24 @@ export default {
         }
 
       .button-footer{
-        color: white;
-        background-color: black;
+        color: $color_white;
+        background-color: #303030;
         padding: 15px;
-        border-color: blue;
+        border-color: $color_primary;
         cursor: pointer;
+        font-size: 16px;
+      }
+
+      .button-footer:hover{
+        background-color:  $color_primary;
+       border-color: white;
+      }
+
+      .title-footer-icon{
+        color: $color_primary;
+        padding-right: 25px;
       }
       
   }
-
-  
-  
 
 </style>
