@@ -150,15 +150,17 @@ export default {
       .social-icon{
         display: flex;
         align-items: center;
-      }
-
-        .social-icon img{
+        
+        img{
           padding-left: 10px;
         }
+      }
+
+        
 
       .button-footer{
         color: $color_white;
-        background-color: #303030;
+        background-color: $color_black;
         padding: 15px;
         border-color: $color_primary;
         cursor: pointer;
@@ -167,6 +169,7 @@ export default {
         &:hover{
           background-color:  $color_primary;
           border-color: $color_white;
+          box-shadow: 3px 3px black;
         }
       }
 

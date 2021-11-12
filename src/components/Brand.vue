@@ -55,28 +55,27 @@ export default {
     .brand{
       width: 1330px;
       margin: 0 auto;
-    }
 
-      .brand ul{
+      ul{
         display: flex;
         list-style-type: none;
         justify-content: space-around;
         padding: $padding-y 0;
       }
 
-        .brand ul a{
+        a{
           text-decoration: none;
           padding: 0px 20px;
           color: $color_white;
         }
 
-          .brand img{
-            width: 50px;
-            vertical-align: middle;
-            height: 50px;
-            object-fit: contain;
-          }
-
+      img{
+        width: 50px;
+        vertical-align: middle;
+        height: 50px;
+        object-fit: contain;
+      }
+    }
   }
 
  

@@ -32,7 +32,7 @@ export default {
     height: 400px;
   }
   .main-container{
-    background-color: #1c1c1c;
+    background-color: $color_black;
 
     .container-link{
       width: 1330px;
@@ -63,6 +63,13 @@ export default {
         padding: 7px 43px;
         border-color: $color_primary;
         cursor: pointer;
+
+        &:hover{
+          background-color: $color_white;
+          border-color: $color_white;
+          color: $color_primary;
+          border-color: $color_primary;
+        }
       }
 
       .container-button-load{

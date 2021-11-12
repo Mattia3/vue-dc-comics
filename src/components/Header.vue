@@ -95,8 +95,6 @@ export default {
     border-bottom: 4px solid $color_primary;
     color: $color_primary;
   }
-
-  
 }
 
 </style>
