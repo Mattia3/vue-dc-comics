@@ -99,9 +99,10 @@ export default {
   .container-card{
     display: flex;
     flex-wrap: wrap;
+    gap: 20px;
   }
     .card{
-     width: calc(100% / 6);
+     width: calc(100% / 6 - 20px);
      color: white;
      padding-bottom: 30px;
      text-transform: uppercase;

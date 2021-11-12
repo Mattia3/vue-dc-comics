@@ -5,11 +5,10 @@
       <div class="container-link">
         <button class="button-current"><h2><a href="#">CURRENT SERIES</a></h2></button>
         <Card></Card>
-       
       </div>
-       <div class="container-button-load">
-          <button class="button-load">LOAD MORE</button>
-        </div>
+      <div class="container-button-load">
+        <button class="button-load">LOAD MORE</button>
+      </div>
       
     </div>
   </main>
