@@ -3,7 +3,7 @@
     <img class="header-logo"  src="../assets/img/dc-logo.png" alt="Logo Dc">
 
     <ul>
-      <small v-for="(item, i) in navbarItems" :key="i"><li ><a :class="i === currentActive ? 'active' : ''" href="#">{{ item.title }} </a></li></small>
+      <small v-for="(item, i) in navbarItems" :key="i"><li ><a  :class="i === currentActive ? 'active' : ''" @click.prevent="i === currentActive" href="#">{{ item.title }} </a></li></small>
     </ul>
   </header>
 </template>

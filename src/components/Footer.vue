@@ -60,7 +60,7 @@
           <button class="button-footer">SIGN_UP NOW!</button>
         </div>
         <div class="social-icon">
-          <h2 class="title-footer-icon">FOLLOW US</h2>
+          <h3 class="title-footer-icon">FOLLOW US</h3>
           <img src="../assets/img/footer-facebook.png" alt="Icona Facebook">
           <img src="../assets/img/footer-periscope.png" alt="Icona Facebook">
           <img src="../assets/img/footer-pinterest.png" alt="Icona Facebook">
@@ -163,14 +163,14 @@ export default {
         border-color: $color_primary;
         cursor: pointer;
         font-size: 16px;
+
+        &:hover{
+          background-color:  $color_primary;
+          border-color: $color_white;
+        }
       }
 
-      .button-footer:hover{
-        background-color:  $color_primary;
-       border-color: white;
-      }
-
-      .title-footer-icon{
+     .title-footer-icon{
         color: $color_primary;
         padding-right: 25px;
       }
